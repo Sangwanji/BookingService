@@ -5,12 +5,12 @@ class AppError extends Error{
         name,
         message='something went wrong',
         explanation='Service layer Error',
-        statusCodes=StatusCodes.INTERNAL_SERVER_ERROR
+        statusCode=StatusCodes.INTERNAL_SERVER_ERROR
     ){
         this.name=name;
         this.message=message;
         this.explanation=explanation;
-        this.statusCodes=statusCodes;
+        this.statusCode=statusCode;
     }
 }
 
